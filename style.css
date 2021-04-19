@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-size: 10px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0 1rem;
+}
+
+.container {
+  position: relative;
+}
+
+.column {
+  position: absolute;
+  padding: 0 1rem 1rem;
+  z-index: 1;
+  width: 50%;
+}
+
+.column.muuri-item-releasing {
+  z-index: 2;
+}
+
+.column.muuri-item-dragging {
+  z-index: 3;
+  cursor: move;
+}
+
+.column-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.column-header, h1 {
+  position: relative;
+  height: 5rem;
+  line-height: 5rem;
+  overflow: hidden;
+  padding: 0 2rem;
+  text-align: center;
+  background: #333;
+  color: #fff;
+  border-radius: 0.5rem 0.5rem 0 0;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+h1{
+  background-color: #a4a4a4;
+  padding: 0 0;
+  border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.column-content-wrapper {
+  position: relative;
+  padding: 0.8rem;
+  background: #f0f0f0;
+  overflow-y: auto;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.column-content {
+  position: relative;
+  min-height: 100%;
+}
+
+.item {
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  margin: 0.8rem;
+}
+
+.item.muuri-item-releasing {
+  z-index: 9998;
+  
+}
+.item.muuri-item-dragging {
+  z-index: 9999;
+  cursor: move;
+}
+.item.muuri-item-hidden {
+  z-index: 0;
+}
+
+.item-content {
+  position: relative;
+  width: 20rem;
+  height: 20rem;
+  line-height: 15rem;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 0.4rem;
+  font-size: 1.7rem;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 1px 3px 0 rgb(175, 162, 162);
+  box-shadow: 0px 1px 3px 0 rgb(175, 162, 162);
+  border-radius: 50%;
+}
+
+.item-content:hover{
+  background-color: rgba(37, 41, 41, 0);
+}
+
+img{
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+.bulbasaur{
+  background: #5d9367;
+}
+
+.charmander{
+  background: #e38466;
+}
+
+.squirtle{
+  background: #8ec3d0;
+}
+
+.pikachu{
+  background: #f2d67a;
+}
+
+.nidoran{
+  background: #bc95bf;
+}
+
+.grimer{
+  background: #574961;
+}
+
+
+@media (max-width: 600px) {
+
+    html{
+      font-size: 8px;
+    }
+}
+
